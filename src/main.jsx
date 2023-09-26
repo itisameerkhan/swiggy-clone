@@ -1,10 +1,12 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import '../src/index.css'
 import Header from './Header/Header'
+import Body from './Body/Body'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-   <Header />
-  </React.StrictMode>,
+
+   <div className="root">
+    <Header />
+   <Body />
+   </div>
 )

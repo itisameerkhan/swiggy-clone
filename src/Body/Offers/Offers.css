@@ -1,0 +1,22 @@
+.offers-container h3 
+{
+    font-weight: bolder;
+    font-size: 22px;
+}
+.img-grid 
+{
+    height: 250px;
+    padding:10px;
+    cursor: pointer;
+}
+.offers-display-container 
+{
+    display: flex;
+    overflow: scroll;
+    gap: 20px;
+}
+::-webkit-scrollbar-thumb {
+    width: 0;
+    height: 0;
+    background-color: red;
+}
