@@ -1,0 +1,21 @@
+.image-grid-container-2 
+{
+    margin-top: 20px;
+}
+.image-grid-container-2 h3
+{
+    font-weight: bolder;
+    font-size: 22px;
+}
+.img-grids-2 
+{
+    display: flex;
+    overflow: scroll;
+    gap: 20px;
+}
+.img-grids-2 .img-grid-2 
+{
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
