@@ -1,0 +1,1 @@
+export const swiggyLogo = 'https://o.remove.bg/downloads/9298924d-eee4-4dfa-be3a-23236db8ea95/b38aa1b21050b0e769a97eb751d12829-removebg-preview.png'

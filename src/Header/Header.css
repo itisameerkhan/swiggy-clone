@@ -1,0 +1,81 @@
+.swiggy-logo 
+{
+    height: 60px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.swiggy-logo:hover 
+{
+    transform: scale(1.09);
+}
+.header 
+{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 140px;
+    box-shadow: 0px 0px 8px rgb(167, 166, 166);
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: white;
+}
+#header-location 
+{
+    color:gray;
+    font-size: 13px;
+}
+.header-left 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-left p 
+{
+    cursor: pointer;
+}
+#header-location:hover 
+{
+    color:black;
+}
+.fa-chevron-down
+{
+    margin-left: 10px;
+    color:#fd9c4c;
+}
+.header-right 
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-right p 
+{
+    color: gray;
+    cursor: pointer;
+}
+.header-right p i 
+{
+    margin-right: 10px;
+}
+.header-right p:hover 
+{
+    color:#fd9c4c;
+}
+#header-right-cart
+{
+    position: relative;
+}
+.cart-container 
+{
+    position: absolute;
+    visibility: hidden;
+    color:black;
+}
+#header-right-cart:hover .cart-container
+{
+    visibility: visible;
+    top:50px;
+}
