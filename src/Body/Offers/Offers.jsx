@@ -1,6 +1,7 @@
 import './Offers.css'
 import { useEffect, useState } from 'react';
 import { CDN_URL } from '../../utils/Constants';
+import ImgGrdShimmer from '../../Shimmer/ImgGridShimmer/ImgGridShimmer';
 
 const Offers = () => {
 
@@ -16,7 +17,7 @@ const Offers = () => {
         setImgGridCards(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
     }
 
-    return imgGridCards.length === 0 ? <h1>Shimmer</h1> : (
+    return imgGridCards.length === 0 ? <ImgGrdShimmer /> : (
         <div className="offers-container">
             <h3>Best Offers For You</h3>
             <div className="offers-display-container">
