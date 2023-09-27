@@ -1,4 +1,40 @@
 .img-grid-shimmer-3 
 {
-    
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.shimmer-img
+{
+    height: 190px;
+    width: 270px;
+    background-color: gray;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    animation: flicker 1s infinite;
+}
+.img-shimmer-content
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-left: 5px;
+}
+.img-shimmer-content-1
+{
+    height: 15px;
+    width: 150px;
+    background-color: gray;
+    border-radius: 5px;
+    animation: flicker 1s infinite;
+}
+.img-shimmer-content-2 
+{
+    height: 15px;
+    width: 200px;
+    background-color: gray;
+    border-radius: 5px;
+    animation: flicker 1s infinite;
 }

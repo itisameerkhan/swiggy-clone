@@ -1,4 +1,81 @@
 .restaurant-menu-container 
 {
-    margin: 100px;
+    margin: 100px 250px;
+}
+.res-menu-nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.res-menu-nav p 
+{
+    font-size: 12px;
+    color:gray;
+    cursor: pointer;
+}
+.res-menu-nav i 
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+.res-menu-main 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.res-menu-main-left p
+{
+    color:gray;
+}
+.res-menu-main-right 
+{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+}
+.res-menu-main-right h3 
+{
+    border-bottom: 1px solid gray;
+    width: 100%;
+    color:green;
+}
+.res-menu-main-right p 
+{
+    color:gray;
+}
+.res-menu-main-time 
+{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.res-menu-main-time h4 i 
+{
+    padding-right: 8px;
+}
+.nav-menu-carousel-container
+{
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+}
+.nav-menu-carousel-container img 
+{
+    height: 400px;
+    width: 450px;
+    cursor: pointer;;
+}
+.res-menu-rec 
+{
+    margin-top: 30px;
 }
