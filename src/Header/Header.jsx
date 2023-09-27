@@ -1,12 +1,15 @@
 import './Header.css'
 import logo from '../assets/swiggylogo.png';
 import Cart from './Cart/Cart';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div className='header'>
           <div className="header-left">
+          <Link to={'/'}>
           <img src={logo} alt="logo" className='swiggy-logo' />
+          </Link>
           <p id='header-location'>Chennai, TamilNadu, India
           <i className="fa-solid fa-chevron-down"></i></p>
           </div>
