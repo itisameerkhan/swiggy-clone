@@ -2,6 +2,7 @@
 const Recommended = (props) => {
 
     const {recommendedList} = props;
+    
     console.log(recommendedList)
     
     return (
