@@ -21,7 +21,6 @@ const Body = () => {
         setImgGridCards(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
         setImgGridCards2(json?.data?.cards[1]?.card?.card?.imageGridCards?.info);
         setImgGridCards3(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
     return (

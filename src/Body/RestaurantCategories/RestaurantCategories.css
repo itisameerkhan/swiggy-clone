@@ -1,0 +1,27 @@
+.res-category 
+{
+    margin-top: 50px;
+}
+.res-category-accordion-button
+{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding:10px 0px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.fa-chevron-down
+{
+    color:black;
+}
+.bottom-div 
+{
+    height: 15px;
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+}
+.accordion-name
+{
+    font-weight: 500;
+}

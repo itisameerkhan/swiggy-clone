@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './RestaurantMenu.css';
 import { useParams } from 'react-router-dom';
 import { CDN_URL } from '../utils/Constants';
-import Recommended from '../Body/Recommended/Recommended'
+import RestaurantCategories from '../Body/RestaurantCategories/RestaurantCategories';
 
 const RestaurantMenu = () => {
 
@@ -18,8 +18,9 @@ const RestaurantMenu = () => {
         const data = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.0826802&lng=80.2707184&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`);
         const json = await data.json();
         setRestaurantList(json);
-        setRestaurantDatas(json?.data?.cards[2]?.groupedCard.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards)
-        console.log(json);
+        const restaurantDatasMenu = json?.data?.cards[2]?.groupedCard.cardGroupMap?.REGULAR?.cards.filter(c => c?.card?.card?.['@type'] === 'type.googleapis.com/swiggy.presentation.food.v2.ItemCategory');
+        setRestaurantDatas(restaurantDatasMenu)
+        console.log(restaurantDatas)
     }
     if(restaurantList.length === 0) return <h1>Shimmer</h1>
 
@@ -54,8 +55,10 @@ const RestaurantMenu = () => {
              <h4><i class="fa-solid fa-clock"></i>{slaString}</h4>
              <h4><i class="fa-solid fa-money-bill"></i>{costForTwoMessage}</h4>
            </div>
-           <div className="res-menu-rec">
-             <Recommended recommendedList={restaurantDatas} />
+           <div className="res-categories">
+            {restaurantDatas.map((category) => (
+                <RestaurantCategories  resCategory={category?.card?.card} key={category?.card?.card?.title} />
+            ))}
            </div>
         </div>
     )
