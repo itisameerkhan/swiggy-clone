@@ -20,7 +20,7 @@ const Recommended = (props) => {
                 </div>
                 <div className="res-menu-group-card-right">
                     <img src={CDN_URL + card?.card?.info?.imageId} alt="" />
-                    <button className="group-card-btn" onClick={() => {setBtnValue('Added')}}>
+                    <button className="group-card-btn" onClick={ () => setBtnValue('Added')}>
                         {btnValue}
                     </button>
                 </div>
