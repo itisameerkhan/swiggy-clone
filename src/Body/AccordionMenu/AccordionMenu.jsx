@@ -18,6 +18,7 @@ const AccordionMenu = ({data}) => {
                  <div className="accordion-main-right">
                     <img src={CDN_URL + list?.card?.info?.imageId} alt="" className='accordion-img' />
                     <button className='accordion-add-btn' onClick={()=> setBtnValue('Added')}>{btnValue}</button>
+                    
                  </div>
                </div>
             ))}
